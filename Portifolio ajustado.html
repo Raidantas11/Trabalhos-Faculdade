@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="CSS Portifolio ajustado" href="CSS Portifolio ajustado.css">
+  
+</head>
+<body>
+  <nav>
+    <ul>
+      
+      <li><a href="Pagina 2 ajustada.html">Portfólio</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="IMG_3225.jpg" alt="Este sou Eu">
+    <h1>Seu Nome</h1>
+    <p>Aluno de Análise e Desenvolvimento de Sistemas</p>
+    <p>Período: 2º</p>
+    <p>Faculdade: Senac Pernambuco 
+    <p>Turno: Noite
+    
+  </header>
+
+  <section id="about">
+    <h2>Um Pouco Sobre Mim</h2>
+    <p>Olá, eu sou Raimundo Dantas, um estudante de Análise e Desenvolvimento de Sistemas na Faculdade Senac PE. Estou aprendendo ainda a utilizar HTML, CSS e JS em uma unica pagina. Ta sendo bem difícil, mas até que divertido. Esse é o meu Portifólio. Básico, apenas com coisas da faculdade, que foi o que eu já fiz.</p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Raimundo Dantas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
